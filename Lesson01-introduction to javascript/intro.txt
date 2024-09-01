@@ -1,0 +1,3 @@
+History of JavaScript
+What is JavaScript?
+What can we use JavaScript to do?
