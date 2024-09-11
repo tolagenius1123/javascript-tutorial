@@ -7,3 +7,7 @@ Create an application that takes a students score and determines the grade
 60 - 70 = B3
 70 - 74 = B2
 75 - 100 = A1
+
+Assignment 2
+Create a function that takes any number 
+and prints out the times table of that number using a loop
