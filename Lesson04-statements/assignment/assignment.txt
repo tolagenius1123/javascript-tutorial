@@ -1,0 +1,9 @@
+Create an application that takes a students score and determines the grade
+
+0 - 30 = F9
+30 - 40 = E8
+40 - 50 = D7
+50 - 60 = C6
+60 - 70 = B3
+70 - 74 = B2
+75 - 100 = A1
