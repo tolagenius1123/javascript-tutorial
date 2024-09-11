@@ -1,62 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Control Flow</title>
-    <style>
-      body {
-        padding: 20px;
-        font-family: sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        /* background-color: rgb(139, 19, 89); */
-        background-color: rgb(26, 122, 196);
-        margin: 0;
-      }
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Control Flow</title>
+		<style>
+			body {
+				padding: 20px;
+				font-family: sans-serif;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
+				/* background-color: rgb(139, 19, 89); */
+				background-color: rgb(26, 122, 196);
+				margin: 0;
+			}
 
-      input {
-        height: 40px;
-        border-radius: 10px;
-        padding: 0px 10px;
-        width: 200px;
-      }
+			input {
+				height: 40px;
+				border-radius: 10px;
+				padding: 0px 10px;
+				width: 200px;
+			}
 
-      button {
-        border-radius: 10px;
-        padding: 12px 10px;
-        color: white;
-        background: black;
-        cursor: pointer;
-        border: none;
-        font-size: 16px;
-      }
+			button {
+				border-radius: 10px;
+				padding: 12px 10px;
+				color: white;
+				background: black;
+				cursor: pointer;
+				border: none;
+				font-size: 16px;
+			}
 
-.container {
-text-align: center;
-background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(10,49,121,1) 37%, rgba(0,212,255,1) 100%);
-height: 200px;
-width:400px;
-}
-   h1{
-        color: white;
-      }
-      p{
-     color: white;
-
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Student Score</h1>
-      <input id="grade" name="age" type="number" />
-      <button>Submit</button>
-      <p>Grade: <span id="result"></span></p>
-    </div>
-    <script src="index.js"></script>
-  </body>
+			.container {
+				text-align: center;
+				background: rgb(2, 0, 36);
+				background: linear-gradient(
+					90deg,
+					rgba(2, 0, 36, 1) 0%,
+					rgba(10, 49, 121, 1) 37%,
+					rgba(0, 212, 255, 1) 100%
+				);
+				height: 200px;
+				width: 400px;
+				border-radius: 10px;
+			}
+			h1 {
+				color: white;
+			}
+			p {
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Student Score</h1>
+			<input id="grade" name="age" type="number" />
+			<button>Submit</button>
+			<p>Grade: <span id="result"></span></p>
+		</div>
+		<script src="index.js"></script>
+	</body>
 </html>
