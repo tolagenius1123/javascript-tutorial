@@ -31,9 +31,9 @@
 // });
 
 function printMultiTable(digit) {
-  for (let i = 1; i <= 11; i++) {
-    let value = digit * i;
-    console.log(`${digit} * ${i} = ${value}`);
-  }
+	for (let i = 1; i <= 12; i++) {
+		let value = digit * i;
+		console.log(`${digit} * ${i} = ${value}`);
+	}
 }
 printMultiTable(5);
