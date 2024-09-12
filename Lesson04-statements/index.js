@@ -12,6 +12,7 @@ button.addEventListener("click", () => {
 		result.innerHTML = "You're a Teenager";
 	} else if (userAge.value >= 18) {
 		result.innerHTML = "You're an Adult";
+	
 	} else {
 		alert("Invalid Age");
 	}
