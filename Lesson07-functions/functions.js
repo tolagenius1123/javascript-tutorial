@@ -23,9 +23,70 @@
 // 	console.log(num1 + num2);
 // }
 
-const addTwoNumbers = (num1, num2, num3) => {
-	console.log(num1 + num2 + num3);
+// const addTwoNumbers = (num1, num2, num3) => {
+// 	console.log(num1 + num2 + num3);
+// };
+
+// addTwoNumbers(5, 10, 25);
+// addTwoNumbers(25, 25, 10);
+
+// const findSquareRootOfAnyNumber = (num) => {
+// 	const result = num ** 2;
+// 	return console.log(result);
+// };
+
+// const findSquareRootOfAnyNumber = (num) => console.log(num ** 2);
+
+// findSquareRootOfAnyNumber(5);
+// findSquareRootOfAnyNumber(6);
+// findSquareRootOfAnyNumber(7);
+
+// GLOBAL SCOPE
+const emailAddress = "nancy@gmail.com"; // Global variable
+
+const displayMessage = (message) =>
+	console.log(`The user's email is ${message}`);
+
+const validateEmailAddress = (userEmail) => {
+	let username = "tolaboy"; // Local variable
+	const isValid = userEmail.includes("@");
+	return console.log({ isValid, username });
 };
 
-addTwoNumbers(5, 10, 25);
-addTwoNumbers(25, 25, 10);
+const purchasedProducts = [
+	{
+		productId: 1,
+		productName: "Onions",
+		productPrice: 1000,
+	},
+	{
+		productId: 2,
+		productName: "Tomatoes",
+		productPrice: 5000,
+	},
+	{
+		productId: 3,
+		productName: "Pepper",
+		productPrice: 3000,
+	},
+];
+
+const expectedBudget = 6000; // Global Scope
+
+const expenseTracker = (listOfItems, budgetedAmount) => {
+	let totalAmount = 0; // Local Scope
+	listOfItems.map((item) => (totalAmount = totalAmount + item.productPrice));
+
+	console.log({ amountBudgeted: budgetedAmount, amountSpent: totalAmount });
+	if (totalAmount > budgetedAmount) {
+		let errorMessage = "Oops!!! We exceeded our budget"; // Block Scope
+		console.log(errorMessage);
+	} else {
+		let successMessage = "Nice Job!!!, we successfully managed our expense"; // Block Scope
+		console.log(successMessage);
+	}
+};
+
+// displayMessage(emailAddress);
+// validateEmailAddress(emailAddress);
+expenseTracker(purchasedProducts, 5000);
