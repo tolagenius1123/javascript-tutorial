@@ -42,51 +42,85 @@
 // findSquareRootOfAnyNumber(7);
 
 // GLOBAL SCOPE
-const emailAddress = "nancy@gmail.com"; // Global variable
+// const emailAddress = "nancy@gmail.com"; // Global variable
 
-const displayMessage = (message) =>
-	console.log(`The user's email is ${message}`);
+// const displayMessage = (message) =>
+// 	console.log(`The user's email is ${message}`);
 
-const validateEmailAddress = (userEmail) => {
-	let username = "tolaboy"; // Local variable
-	const isValid = userEmail.includes("@");
-	return console.log({ isValid, username });
-};
+// const validateEmailAddress = (userEmail) => {
+// 	let username = "tolaboy"; // Local variable
+// 	const isValid = userEmail.includes("@");
+// 	return console.log({ isValid, username });
+// };
 
-const purchasedProducts = [
-	{
-		productId: 1,
-		productName: "Onions",
-		productPrice: 1000,
-	},
-	{
-		productId: 2,
-		productName: "Tomatoes",
-		productPrice: 5000,
-	},
-	{
-		productId: 3,
-		productName: "Pepper",
-		productPrice: 3000,
-	},
-];
+// const purchasedProducts = [
+// 	{
+// 		productId: 1,
+// 		productName: "Onions",
+// 		productPrice: 1000,
+// 	},
+// 	{
+// 		productId: 2,
+// 		productName: "Tomatoes",
+// 		productPrice: 5000,
+// 	},
+// 	{
+// 		productId: 3,
+// 		productName: "Pepper",
+// 		productPrice: 3000,
+// 	},
+// ];
 
-const expectedBudget = 6000; // Global Scope
+// const expectedBudget = 6000; // Global Scope
 
-const expenseTracker = (listOfItems, budgetedAmount) => {
-	let totalAmount = 0; // Local Scope
-	listOfItems.map((item) => (totalAmount = totalAmount + item.productPrice));
+// const expenseTracker = (listOfItems, budgetedAmount) => {
+// 	let totalAmount = 0; // Local Scope
+// 	listOfItems.map((item) => (totalAmount = totalAmount + item.productPrice));
 
-	console.log({ amountBudgeted: budgetedAmount, amountSpent: totalAmount });
-	if (totalAmount > budgetedAmount) {
-		let errorMessage = "Oops!!! We exceeded our budget"; // Block Scope
-		console.log(errorMessage);
-	} else {
-		let successMessage = "Nice Job!!!, we successfully managed our expense"; // Block Scope
-		console.log(successMessage);
-	}
-};
+// 	console.log({ amountBudgeted: budgetedAmount, amountSpent: totalAmount });
+// 	if (totalAmount > budgetedAmount) {
+// 		let errorMessage = "Oops!!! We exceeded our budget"; // Block Scope
+// 		console.log(errorMessage);
+// 	} else {
+// 		let successMessage = "Nice Job!!!, we successfully managed our expense"; // Block Scope
+// 		console.log(successMessage);
+// 	}
+// };
 
 // displayMessage(emailAddress);
 // validateEmailAddress(emailAddress);
-expenseTracker(purchasedProducts, 5000);
+// expenseTracker(purchasedProducts, 5000);
+
+// reponseCode = 200;
+
+// function fetchData(statusCode) {
+// 	try {
+// 		statusCode === 200 && console.log("Success");
+// 		console.log(responseCode);
+// 	} catch (error) {
+// 		console.log("Caught an error");
+// 		console.log(error);
+// 	}
+// }
+
+// fetchData(responseCode);
+
+// const numerator = 100,
+// 	denominator = "a";
+
+// try {
+// 	console.log(numerator / denominator);
+
+// 	// forgot to define variable a
+// 	console.log(a);
+// } catch (error) {
+// 	console.log("An error caught");
+// 	console.log("Error message: " + error);
+// 	throw error;
+// }
+
+import { displayMessage } from "./utility.js";
+import { multiplyTwoNumbers } from "./utility.js";
+
+displayMessage("I just called my display utility function");
+multiplyTwoNumbers(5, 5);
